@@ -1,0 +1,10 @@
+{% extends 'base' %}
+
+{% block content %}
+   <h1> Preguntas:</h1>
+   <ul>
+      {% for p in preguntas %}
+        <li> {{p.preguntas_texto }}</li>
+      {% endfor %}
+   </ul>
+{% endblock %}
